@@ -1,5 +1,6 @@
 let database = require("../database");
 
+
 let authController = {
   login: (req, res) => {
     res.render("auth/login");
@@ -10,7 +11,7 @@ let authController = {
   },
 
   loginSubmit: (req, res) => {
-    // implement
+    console.log(req.body);
   },
 
   registerSubmit: (req, res) => {
